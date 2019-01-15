@@ -13,6 +13,7 @@ public class MainModel  extends BaseMvpModel<MyApiService> {
 
     @SuppressLint("CheckResult")
     public void jlkjkl(String account, String pwd){
+        account.length();
         toSubscribe( apiService.sendVerify(account,pwd).map(new HttpResultFunc<UserBean>()),
                 new ErrorSubscriber<>(new ResponseListener<UserBean>() {
                     @Override
