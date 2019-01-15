@@ -56,7 +56,13 @@ public class RxTask {
                 .subscribe(task);
 
     }
+    public static void doTask(RxNoParamsClass task ) {
 
+        Observable.create(task).subscribeOn(Schedulers.io())
+                .unsubscribeOn(Schedulers.io())
+                .observeOn( AndroidSchedulers.mainThread())
+                .subscribe(task);
+    }
     /**
      * 普通任务class
      */

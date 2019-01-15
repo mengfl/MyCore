@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
+
 android {
     compileSdkVersion 27
     compileOptions {
@@ -51,12 +51,12 @@ dependencies {
     api 'com.jakewharton.rxbinding2:rxbinding:2.1.1'
 
 }
-ext {
-    GITHUB_REPO_PATH = "D/maven"
-    PUBLISH_GROUP_ID = 'mfl.lib'
-    PUBLISH_ARTIFACT_ID = 'aar'
-    PUBLISH_VERSION = '1.0.0'
-}
+//ext {
+//    GITHUB_REPO_PATH = "D/maven"
+//    PUBLISH_GROUP_ID = 'mfl.lib'
+//    PUBLISH_ARTIFACT_ID = 'aar'
+//    PUBLISH_VERSION = '1.0.0'
+//}
 //
 ////////// 打包发布配置开始 ////////
 //apply plugin: 'maven'
