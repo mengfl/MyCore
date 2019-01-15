@@ -45,6 +45,8 @@ public class MainActivity extends BaseActivity<MainContract.View, MainPresenter>
         button.setText("1111");
         button.setText("1111");
         button.setText("1111");
+        button.setText("1111");
+        button.setText("1111");
     }
 
     @Override
