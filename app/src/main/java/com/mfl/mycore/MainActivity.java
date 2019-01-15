@@ -42,6 +42,7 @@ public class MainActivity extends BaseActivity<MainContract.View, MainPresenter>
 
         button= findViewById(R.id.button);
         button1= findViewById(R.id.button1);
+        button.setText("1111");
     }
 
     @Override
